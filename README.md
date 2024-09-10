@@ -18,6 +18,6 @@ python main.py --dataset mnist \ # dataset name
 ```
 
 ## Note
-* It seems that the implementation of UER algorithm needs a lot of time, so the total training time is very slow.
+* It seems that the implementation of UER algorithm needs a lot of time, so the total training is very slow.
 * It seems that the LATENT algorithm only works well using simple MLP / CNN network in small dataset like MNIST. I double 
  whether this algorithm can be applied to more popular network like ResNet and Transformer.
