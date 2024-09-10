@@ -75,10 +75,10 @@ if __name__ == "__main__":
     optimizer = optim.SGD(model.parameters(), lr=1e-2)
 
     model.train()
-    total_step = len(train_loader) / args.bs * args.epochs
+    total_step = int(len(train_loader) * args.epochs)
     progress_bar = tqdm(range(total_step))
 
-    for epoch in args.epochs:
+    for epoch in range(args.epochs):
         model.train()
         for idx, data in enumerate(train_loader):
             input, label = data[0].to(args.device), data[1].to(args.device)
