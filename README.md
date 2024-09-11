@@ -18,6 +18,8 @@ python main.py --dataset mnist \ # dataset name
 ```
 
 ## Note
+* Running with the default configuration we can obtain a model with 93% accuracy on MNIST datset.
+    The training log can be found in the ```logs``` folder.
 * It seems that the implementation of UER algorithm needs a lot of time, so the total training is very slow.
 * It seems that the LATENT algorithm only works well using simple MLP / CNN network in small dataset like MNIST. I double 
  whether this algorithm can be applied to more popular network like ResNet and Transformer.
